@@ -1,12 +1,28 @@
+"use client"
 import { navLinks } from "@/constants/constant";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { TbAirBalloon } from "react-icons/tb";
 import Link from "next/link";
 import { HiBars3BottomRight } from "react-icons/hi2";
 
-const Nav = () => {
+type  props = {
+  openNav:() => void
+}
+
+const Nav = ({openNav}: props) => {
+
+  const [navBg, setNavBg] = useState(false);
+  useEffect(() =>{
+    const handler = () => {
+      if(window.scrollY>=90) setNavBg(true)
+      if(window.scrollY<90) setNavBg(false)
+    };
+    window.addEventListener("scroll", handler);
+    return () => window.removeEventListener("scroll", handler);
+  }, []);
+
   return (
-    <div className="bg-blue-950 transition-all duration-200 h-[12vh] z-[1000]fixed w-full ">
+    <div className={`${navBg ? 'bg-blue-950 shadow-md' : ''} transition-all duration-200 h-[12vh] z-[1000] fixed w-full`}>
       <div className="flex justify-between items-center h-full px-10 w-[90%] xl:-[80%] mx-auto">
         <div className="flex items-center space-x-2">
           <div className="w-10 h-10 bg-rose-500 rounded-full flex items-center justify-center flex-col">
@@ -28,7 +44,7 @@ const Nav = () => {
         </div>
         <div className="flex items-center space-x-4">
           <button className="md:px-12 md:py-2.5 px-8 py-2 text-black text-base bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg">Book Now</button>
-          <HiBars3BottomRight className="text-white w-8 h-8 cursor-pointer lg:hidden" />
+          <HiBars3BottomRight  onClick={openNav} className="text-white w-8 h-8 cursor-pointer lg:hidden" />
         </div>
       </div>
     </div>
