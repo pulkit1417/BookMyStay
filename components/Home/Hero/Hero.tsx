@@ -8,28 +8,30 @@ const Hero = () => {
             {/* Video background with overlay */}
             <div className='absolute top-0 left-0 w-full h-full bg-gray-800 opacity-70'></div>
             <video src="/images/hero1.mp4" autoPlay muted loop preload="metadata" className='w-full h-full object-cover' />
-            
+
             {/* Content container */}
             <div className='absolute z-[100] w-full h-full top-0 left-0 flex items-center justify-center'>
                 <div className='flex flex-col items-center w-full max-w-7xl px-4'>
                     {/* Hero text */}
-                    <h1 className='text-[25px] mb-4 text-center md:text-[35px] lg:text-[45px] tracking-[0.7rem] text-white font-bold uppercase'>
-                        Lets Enjoy the Nature
-                    </h1>
-                    
-                    <p className='text-white text-center md:text-base text-lg font-normal [word-spacing:5px] mb-4'>
-                        Get the best prices on 2,000,000+ properties worldwide
-                    </p>
-                    
+                    <div data-aos="fade-up" data-aos-once="true">
+                        <h1 className='text-[25px] mb-4 text-center md:text-[35px] lg:text-[45px] tracking-[0.7rem] text-white font-bold uppercase'>
+                            Lets Enjoy the Nature
+                        </h1>
+
+                        <p className='text-white text-center md:text-base text-lg font-normal [word-spacing:5px] mb-4'>
+                            Get the best prices on 2,000,000+ properties worldwide
+                        </p>
+                    </div>
+
                     {/* SearchBox component centered */}
                     <div className='w-full flex justify-center'>
                         <SearchBox />
                     </div>
-                    
+
                     {/* Search button centered */}
                     <div className='flex justify-center w-full'>
-                        <Link 
-                            href="#" 
+                        <Link
+                            href="#"
                             className='rounded px-14 md:px-28 py-2.5 overflow-hidden group bg-rose-600 relative hover:bg-gradient-to-r hover:from-red-500 hover:to-red-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-red-400 transition-all ease-out duration-300
                             -mt-4'
                         >
