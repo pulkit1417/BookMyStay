@@ -140,6 +140,7 @@ export const destinationData = [
     {
       id: 1,
       name: "John Doe",
+      profession: "Software Engineer",
       review:
         "The service exceeded my expectations. The team was professional, and I couldn't be happier with the results. Highly recommended to everyone!",
       image: "/images/u1.jpg",
@@ -147,6 +148,7 @@ export const destinationData = [
     {
       id: 2,
       name: "Jane Smith",
+      profession: "Marketing Manager",
       review:
         "I am thoroughly impressed with the attention to detail and quality. They truly understand customer needs and deliver outstanding results. Wonderful experience!",
       image: "/images/u2.jpg",
@@ -154,6 +156,7 @@ export const destinationData = [
     {
       id: 3,
       name: "Michael Brown",
+      profession: "Graphic Designer",
       review:
         "Exceptional quality and fantastic customer service! The project was delivered on time and exactly as I wanted. I will definitely use their services again.",
       image: "/images/u3.jpg",
@@ -161,6 +164,7 @@ export const destinationData = [
     {
       id: 4,
       name: "Emily Davis",
+      profession: "Financial Analyst",
       review:
         "Outstanding results! The team was efficient, and their professionalism was remarkable. Everything was done perfectly. I highly recommend their expertise to everyone.",
       image: "/images/u1.jpg",
@@ -168,6 +172,7 @@ export const destinationData = [
     {
       id: 5,
       name: "Chris Wilson",
+      profession: "Sales Representative",
       review:
         "Amazing service! They exceeded all expectations and delivered a product that I am extremely happy with. The communication throughout the project was excellent.",
       image: "/images/u2.jpg",
@@ -175,6 +180,7 @@ export const destinationData = [
     {
       id: 6,
       name: "Sarah Johnson",
+      profession: "HR Manager",
       review:
         "Fantastic experience! They listened carefully to my requirements and delivered exactly what I needed. Their attention to detail is truly commendable.",
       image: "/images/u3.jpg",
@@ -182,6 +188,7 @@ export const destinationData = [
     {
       id: 7,
       name: "David Lee",
+      profession: "Data Scientist",
       review:
         "Absolutely incredible service! The team was supportive and responsive, making sure everything was perfect. I will definitely recommend them to my friends.",
       image: "/images/u1.jpg",
@@ -189,6 +196,7 @@ export const destinationData = [
     {
       id: 8,
       name: "Sophia White",
+      profession: "Operations Manager",
       review:
         "Five-star service from start to finish! The dedication and skill of the team made all the difference. Truly an exceptional experience I won’t forget.",
       image: "/images/u2.jpg",
