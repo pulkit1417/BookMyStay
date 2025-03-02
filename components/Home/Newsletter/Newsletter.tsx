@@ -9,7 +9,7 @@ const Newsletter = () => {
         />
         <h1 className='text-lg sm:text-xl md:text-2xl text-white font-semibold mt-10 tracking-widest'>Your Travel Journey Starts Here</h1>
         <p className='mt-3 text-white text-xs sm:text-sm'>
-            Sign up and we'll send the best deals to you 
+            Sign up and we&apos;ll send the best deals to you 
         </p>
         <div className='w-full'>
             <input 
